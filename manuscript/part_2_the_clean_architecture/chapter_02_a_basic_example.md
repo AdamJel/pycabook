@@ -7,16 +7,16 @@ B> - Wargames (1983)
 
 ## Project overview
 
-The goal of the "Rent-o-Matic" project (fans of "Day of the Tentacle" may get the reference) is to create a simple search engine on top of a dataset of objects which are described by some quantities. The search engine allows setting some filters to narrow the search.
+The goal of the "Rent-o-Matic" project (fans of "Day of the Tentacle" may get the reference) is to create a simple search engine for a house renting company. As objects in the dataset (houses) are described by some quantities, the search engine allows the user to set some filters to narrow the search.
  
-The objects in the dataset are houses for rent described by the following quantities:
+As I said, objects in the dataset are houses, and the system describes them by the following quantities:
  
 * An unique identifier
 * A size in square meters
 * A renting price in Euro/day
 * Latitude and longitude
 
-The description of the house is purposely minimal so that the whole project can easily fit in a chapter. The concepts that I will show are however easily extendable to more complex cases.
+The description is purposely minimal so that the whole project can easily fit in a chapter. The concepts that I will show are however easily extendable to more complex cases.
 
 As pushed by the clean architecture model, we are interested in separating the different layers of the system.
 
