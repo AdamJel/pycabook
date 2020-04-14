@@ -6,7 +6,7 @@ B> - Back to the Future (1985)
 
 ## A day in the life of a clean system
 
-In this section I will overview what happens in a clean system (i.e. a system designed with a clean architecture) when data flows in it. I will purposefully omit details because I want the reader to grasp the broad concepts of separation of concerns and inversion of control, which are important concepts in system design. The concrete example will be then implemented in all its glorious details in the rest of the book, so don't worry too much if you have no idea how something can be achieved. Try to get the big picture.
+In this section I will overview what happens in a clean system (i.e. a system designed with a clean architecture) when data flows in it. I will purposefully omit details, because I want the reader to grasp the broad concepts of separation of concerns and inversion of control, which are important in system design. The concrete example will be then implemented in all its glorious details in the rest of the book, so don't worry too much if you have no idea how something can be achieved. Try to get the big picture.
 
 Please mind that this is a description of the data flow, that is, how data reaches the system, which path it follows while passing from one component to the next, and how it becomes output. This is typically not the way we _build_ the system, as we usually create and link components according to their structural value. You can understand this very well if you think about a house. You enter the door first, then you turn on the light, you walk on the floor, you wash your hands in the basin, but when you start building the house you lay down the foundations and the water pipes first, not the door, which is possibly one of the last and more "peripheral" elements.
 
@@ -14,15 +14,140 @@ Please mind that this is a description of the data flow, that is, how data reach
 
 In the rest of the book we will design part of a simple house renting system, so let's consider that a user wants to see the available houses on our web site https://www.rentomatic.com. They open the browser and type the address, then clicking on menus and buttons they reach the page with the list of all the houses that our company rents.
 
-Let's assume that this address is https://www.rentomatic.com/houses?status=available, so when the user's browser accesses that URL an HTTP request reaches our system. There is a component of our system that is waiting for connections that contain an HTTP request, let's call it "web framework".
+Let's assume that this address is https://www.rentomatic.com/houses?status=available, so when the user's browser accesses that URL an HTTP request reaches our system. There is a component of our system that is waiting for connections that contain an HTTP request, let's call it "web framework"[^web framework].
 
-The purpose of this component is to understand the HTTP protocol, and to retrieve the parts of the request that we need to use in the following process. In this simple case there are two important parts of the request, namely the endpoint itself, that is `/houses`, and a single query string parameter, `status=available`. Endpoints are like commands for our system, when a user accesses one of them they signal to the system that they are requesting a service, which in this case is the list of all houses available for rent.
+[^web framework]: there are many more layers that the HTTP request has to go through before reaching the actual web framework, for example the web server, but since the purpose of those layers is mostly to increase performances, I am not going to consider them in this book.
+
+The purpose of this component is to understand the HTTP request, and to retrieve the data that we need to provide a response. In this simple case there are two important parts of the request, namely the endpoint itself, that is `/houses`, and a single query string parameter, `status=available`. Endpoints are like commands for our system, so when a user accesses one of them, they signal to the system that a specific service has been requested, which in this case is the list of all the houses that are available for rent.
 
 The web framework then processes the incoming request and answers with an HTTP response that will contain some data. As we are considering an endpoint that is supposed to be reached explicitly by the user of the website, the web framework will return an HTML page in the body of the response, but if this was an internal endpoint, for example called by some asynchronous JavaScript code in the front-end, the body of the response would probably be just a JSON structure. At any rate, the web framework has to run some code to transform the request into a meaningful response.
 
+{caption: "Figure 1", width: 70%}
+```svg
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="79.683876mm"
+   height="33.20216mm"
+   viewBox="0 0 79.683876 33.20216"
+   version="1.1"
+   id="svg7352"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="figure1.svg">
+  <defs
+     id="defs7346">
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1723"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="scale(0.4)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.6556641"
+     inkscape:cx="27.905248"
+     inkscape:cy="-40.032118"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1381"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7349">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-46.932155,-116.75864)">
+    <path
+       id="user-icon"
+       d="m 52.57513,146.48819 q -0.895281,0 -1.532827,-0.63754 -0.637548,-0.63754 -0.637548,-1.53283 v -9.54965 q 0,-0.89527 0.637548,-1.53282 0.637546,-0.63755 1.532827,-0.63755 h 14.758549 q 0.89528,0 1.532829,0.63755 0.637545,0.63755 0.637545,1.53282 v 9.54965 q 0,0.89529 -0.637545,1.53283 -0.637549,0.63754 -1.532829,0.63754 z m -0.434075,-11.72002 v 9.54965 q 0,0.17635 0.128866,0.30521 0.128866,0.12887 0.305209,0.12887 h 14.758549 q 0.176345,0 0.305207,-0.12887 0.128868,-0.12886 0.128868,-0.30521 v -9.54965 q 0,-0.17633 -0.128868,-0.3052 -0.128862,-0.12888 -0.305207,-0.12888 H 52.57513 q -0.176343,0 -0.305209,0.12888 -0.128866,0.12887 -0.128866,0.3052 z m 18.665223,12.58818 h 2.170374 v 1.30223 q 0,0.54258 -0.637546,0.9224 -0.637549,0.37982 -1.532828,0.37982 H 49.102529 q -0.895276,0 -1.532828,-0.37982 -0.637546,-0.37982 -0.637546,-0.9224 v -1.30223 z m -9.766689,1.30223 q 0.217038,0 0.217038,-0.21704 0,-0.21704 -0.217038,-0.21704 h -2.170372 q -0.217038,0 -0.217038,0.21704 0,0.21704 0.217038,0.21704 z"
+       inkscape:connector-curvature="0"
+       style="stroke-width:0.01356484"
+       inkscape:label="#path1523" />
+    <path
+       id="web-framework-icon"
+       d="m 101.04546,148.38234 h 12.62764 v -1.57845 h -12.62764 z m 0,-6.31382 h 12.62764 v -1.57844 h -12.62764 z m 19.33606,5.52459 q 0,-0.49326 -0.34529,-0.83855 -0.34529,-0.34528 -0.83855,-0.34528 -0.49327,0 -0.83856,0.34528 -0.34528,0.34529 -0.34528,0.83855 0,0.49327 0.34528,0.83855 0.34529,0.3453 0.83856,0.3453 0.49326,0 0.83855,-0.3453 0.34529,-0.34528 0.34529,-0.83855 z M 101.04546,135.7547 h 12.62764 v -1.57844 h -12.62764 z m 19.33606,5.5246 q 0,-0.49326 -0.34529,-0.83855 -0.34529,-0.34529 -0.83855,-0.34529 -0.49327,0 -0.83856,0.34529 -0.34528,0.34529 -0.34528,0.83855 0,0.49327 0.34528,0.83855 0.34529,0.34529 0.83856,0.34529 0.49326,0 0.83855,-0.34529 0.34529,-0.34528 0.34529,-0.83855 z m 0,-6.31381 q 0,-0.49327 -0.34529,-0.83856 -0.34529,-0.34528 -0.83855,-0.34528 -0.49327,0 -0.83856,0.34528 -0.34528,0.34529 -0.34528,0.83856 0,0.49326 0.34528,0.83855 0.34529,0.34528 0.83856,0.34528 0.49326,0 0.83855,-0.34528 0.34529,-0.34529 0.34529,-0.83855 z m 1.18384,10.25995 v 4.73536 H 99.467012 v -4.73536 z m 0,-6.31382 v 4.73536 H 99.467012 v -4.73536 z m 0,-6.31382 v 4.73537 H 99.467012 v -4.73537 z"
+       inkscape:connector-curvature="0"
+       style="stroke-width:0.01233167"
+       inkscape:label="#path1563" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.6146909;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM)"
+       d="M 73.23053,135.87815 H 95.963601"
+       id="arrow-user-web-framework"
+       inkscape:connector-curvature="0"
+       inkscape:label="#path1576" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1.25;font-family:Lato;-inkscape-font-specification:Lato;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
+       x="52.764748"
+       y="128.57394"
+       id="user-text"
+       inkscape:label="#text2192"><tspan
+         sodipodi:role="line"
+         id="tspan2190"
+         x="52.764748"
+         y="128.57394"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;font-family:Lato;-inkscape-font-specification:Lato;stroke-width:0.12761341">User</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
+       x="110.45459"
+       y="121.77129"
+       id="web-framework-text"
+       inkscape:label="#text2192-3"><tspan
+         sodipodi:role="line"
+         id="tspan2190-6"
+         x="110.45459"
+         y="121.77129"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341">Web</tspan><tspan
+         sodipodi:role="line"
+         x="110.45459"
+         y="128.57735"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         id="tspan2212">framework</tspan></text>
+  </g>
+</svg>
+```
+
 FIGURE 1 - Flow diagram - The web framework
 
-The web framework connects with an internal component, we will call it "use case", which task is to provide the data that will be packed into the HTTP response. The use case receives some data from the web framework, in this case the value of the `status` parameter, and applies what is know as the "business logic". This is an important concept in system design, as you are creating a system because you have some knowledge that you think might be useful to the world, or at the very least marketable. This knowledge is, at the end of the day, a way to process data, a way to extract or present data that others don't have. This is the business logic, and it can go from simple things like showing all the data in a set to extremely complex data correlation or forecasts. 
+The main purpose of a good system architecture is to separate concerns, that is to keep different responsibilities and domains separated. This allows us to maintain the system with less effort, as changing one part of it affects the rest only tangentially, and makes it more testable, reducing the amount of bugs.
+
+So, the domain in which the web framework operates is that of the HTTP protocol. It receives the request and, once the data is available, it creates the response, formatting it as the recipient requires (HTML, JSON, etc.). When the web framework has decoded the request, then, it connects with an internal component, called it "use case", which task is to provide the data that will be packed into the HTTP response. The use case receives some data from the web framework, in this case the value of the `status` parameter, and applies what is know as the "business logic". This is an important concept in system design, as you are creating a system because you have some knowledge that you think might be useful to the world, or at the very least marketable. This knowledge is, at the end of the day, a way to process data, a way to extract or present data that others don't have. This is the business logic, and it can go from simple things like showing all the data in a set to extremely complex data correlation or forecasts. 
 
 In the example that we are discussing here, the use case needs to fetch all the houses that are in an available state, extracting them from a source of data. The business logic,in this case consists in extracting available houses, which is very straightforward, as it will probably be a simple filtering on the value of an attribute, but this might not be the case. An example of a more advanced business logic might be an ordering based on a recommendation system, and it might involve more components than just the use case and the data source.
 
@@ -30,17 +155,19 @@ Let's go back to our example. The use case accesses the data source, fetches all
 
 FIGURE 2 - Flow diagram - The use case
 
-What is the data source? Many of you have already pictured a database in your mind, probably a relational database, but that is just one of the possible data sources. Anything that the use case can access and that can provide data is a source, so it might be a file, a database, a network endpoint, or a remote sensor. For simplicity's sake, let's use a relational database in this example, as it is something familiar to the majority of readers, but keep in mind the more generic case.
+What is the data source? Many of you probably already pictured a database in your mind, maybe a relational one, but that is just one of the possible data sources. Anything that the use case can access and that can provide data is a source. It might be a file, a database, a network endpoint, or a remote sensor. For simplicity's sake, let's use a relational database in this example, as it is something familiar to the majority of readers, but keep in mind the more generic case.
 
 FIGURE 3 - Flow diagram - The database
 
 Clearly, if we hard code into the use case the calls to a specific system the two components will be strongly coupled, which is something we try to avoid in system design. Coupled components are not independent, they are tightly connected, and changes occurring in one of the two force changes in the second one as well. This also means that testing components is more difficult, as one component cannot live without the other, and when the second component is a complex system like a database this can severely slow down development.
 
-For example, let's say the use case calls directly a specific Python library to access PostgreSQL such as TODO psycopg. This couples the use case with that specific source, as a change in the API of the library requires a change of the code in the use case. This means that a change in the storage system affects the code that contains the business logic, which is not acceptable, as the latter is the most important part of the system, while the former should be just an implementation detail.
+For example, let's say the use case calls directly a specific Python library to access PostgreSQL such as [psycopg](https://www.psycopg.org/). This couples the use case with that specific source, and a change in the API of the library requires a change of the code in the use case. This means that a change in the storage system affects the code that contains the business logic, which is not acceptable, as the latter is the most important part of the system, while the former should be just an implementation detail[^detail].
+
+[^detail]: Remember that the word "detail" doesn't refer to the complexity of the system, but to the centrality of it in the whole design. In this case, a relational database is hundred of times richer and more complex than an HTTP endpoint, but the core of the application is the endpoint, not where we store data. Usually, implementation details are mostly connected with performances, while the core parts are connected with the correct working of the business logic.
 
 How can we avoid tight coupling? A simple solution is called inversion of control, and I will briefly sketch it here to show a proper implementation in a later section of the book, when we will implement the connection between the use case and the data repository. 
 
-Inversion of control happens in two phases. First, the called object (the database in this case) is wrapped with a standard interface. This is a set of functionalities shared by every implementation of the target, and each interface translates the functionalities to calls to the specific language of the wrapped implementation. A real world example TODO of this is a power plug adapter that allows you to plug electronic devices into sockets of a foreign nation. The wrapper design pattern, indeed, is also called adapter.
+Inversion of control happens in two phases. First, the called object (the database in this case) is wrapped with a standard interface. This is a set of functionalities shared by every implementation of the target, and each interface translates the functionalities to calls to the specific language of the wrapped implementation. A real world example of this is a power plug adapter that allows you to plug electronic devices into sockets of a foreign nation. The wrapper design pattern, indeed, is also called adapter.
 
 FIGURE 4 - Flow diagram - The DB interface
 
@@ -50,11 +177,11 @@ FIGURE 5 - The use case receives the DB interface
 
 What we achieved is that the use case calls methods that are shared by all interfaces, so it doesn't depend on the specific type of the wrapper itself. When you are asked to open a door you don't need to know the specific type of wood used to create the door. If it's a door, and behaves like a door, you can definitely open it. When the use case calls the interface, the latter converts the call in another call in the specific language of the database (for example using a library that has been designed to access it).
 
-FIGURE 6 - The use case calls the interface, which calls the database
+FIGURE 6 - The use case calls the interface
 
 The storage interface receives data from the database in a custom format, which may use language structures or more complex types defined by the database itself. The interface has to convert the data in a format that is known to the use case and return it.
 
-FIGURE 7 - The use case calls the interface, which calls the database
+FIGURE 7 - The interface calls the database
 
 At this point, the use case has the raw data extracted from the data source, and has a chance to apply some more business logic, like further filtering the data or processing it in a way that cannot be done by the data source. In the specific case that we are considering, there is nothing left to do, so the use case can return the data immediately.
 
