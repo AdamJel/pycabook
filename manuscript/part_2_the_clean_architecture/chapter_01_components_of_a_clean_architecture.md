@@ -14,9 +14,9 @@ Please mind that this is a description of the data flow, that is, how data reach
 
 In the rest of the book we will design part of a simple house renting system, so let's consider that a user wants to see the available houses on our web site https://www.rentomatic.com. They open the browser and type the address, then clicking on menus and buttons they reach the page with the list of all the houses that our company rents.
 
-Let's assume that this address is https://www.rentomatic.com/houses?status=available, so when the user's browser accesses that URL an HTTP request reaches our system. There is a component of our system that is waiting for connections that contain an HTTP request, let's call it "web framework"[^web framework].
+Let's assume that this address is https://www.rentomatic.com/houses?status=available, so when the user's browser accesses that URL an HTTP request reaches our system. There is a component of our system that is waiting for connections that contain an HTTP request, let's call it "web framework"[^webframework].
 
-[^web framework]: there are many more layers that the HTTP request has to go through before reaching the actual web framework, for example the web server, but since the purpose of those layers is mostly to increase performances, I am not going to consider them in this book.
+[^webframework]: there are many more layers that the HTTP request has to go through before reaching the actual web framework, for example the web server, but since the purpose of those layers is mostly to increase performances, I am not going to consider them in this book.
 
 The purpose of this component is to understand the HTTP request, and to retrieve the data that we need to provide a response. In this simple case there are two important parts of the request, namely the endpoint itself, that is `/houses`, and a single query string parameter, `status=available`. Endpoints are like commands for our system, so when a user accesses one of them, they signal to the system that a specific service has been requested, which in this case is the list of all the houses that are available for rent.
 
@@ -33,11 +33,13 @@ In the example that we are discussing here, the use case needs to fetch all the 
 
 Let's go back to our example. The use case accesses the data source, fetches all the houses available for rent and returns them to the web framework.
 
-FIGURE 2 - Flow diagram - The use case
+{width: 60%}
+![Figure 2](images/figure02.svg)
 
 What is the data source? Many of you probably already pictured a database in your mind, maybe a relational one, but that is just one of the possible data sources. Anything that the use case can access and that can provide data is a source. It might be a file, a database, a network endpoint, or a remote sensor. For simplicity's sake, let's use a relational database in this example, as it is something familiar to the majority of readers, but keep in mind the more generic case.
 
-FIGURE 3 - Flow diagram - The database
+{width: 60%}
+![Figure 3](images/figure03.svg)
 
 Clearly, if we hard code into the use case the calls to a specific system the two components will be strongly coupled, which is something we try to avoid in system design. Coupled components are not independent, they are tightly connected, and changes occurring in one of the two force changes in the second one as well. This also means that testing components is more difficult, as one component cannot live without the other, and when the second component is a complex system like a database this can severely slow down development.
 
@@ -49,27 +51,33 @@ How can we avoid tight coupling? A simple solution is called inversion of contro
 
 Inversion of control happens in two phases. First, the called object (the database in this case) is wrapped with a standard interface. This is a set of functionalities shared by every implementation of the target, and each interface translates the functionalities to calls to the specific language of the wrapped implementation. A real world example of this is a power plug adapter that allows you to plug electronic devices into sockets of a foreign nation. The wrapper design pattern, indeed, is also called adapter.
 
-FIGURE 4 - Flow diagram - The DB interface
+{width: 60%}
+![Figure 4](images/figure04.svg)
 
 In the second phase of inversion of control the caller (the use case) is modified to avoid hard coding the call to the specific interface, as this would again couple the two. The use case accepts an incoming object as a parameter of its constructor, and receives a concrete instance of the adapter at creation time.
 
-FIGURE 5 - The use case receives the DB interface
+{width: 60%}
+![Figure 5](images/figure05.svg)
 
 What we achieved is that the use case calls methods that are shared by all interfaces, so it doesn't depend on the specific type of the wrapper itself. When you are asked to open a door you don't need to know the specific type of wood used to create the door. If it's a door, and behaves like a door, you can definitely open it. When the use case calls the interface, the latter converts the call in another call in the specific language of the database (for example using a library that has been designed to access it).
 
-FIGURE 6 - The use case calls the interface
+{width: 60%}
+![Figure 6](images/figure06.svg)
 
 The storage interface receives data from the database in a custom format, which may use language structures or more complex types defined by the database itself. The interface has to convert the data in a format that is known to the use case and return it.
 
-FIGURE 7 - The interface calls the database
+{width: 60%}
+![Figure 7](images/figure07.svg)
 
 At this point, the use case has the raw data extracted from the data source, and has a chance to apply some more business logic, like further filtering the data or processing it in a way that cannot be done by the data source. In the specific case that we are considering, there is nothing left to do, so the use case can return the data immediately.
 
-FIGURE 7 - The use case returns data to the web framework
+{width: 60%}
+![Figure 7](images/figure07.svg)
 
 Finally, the web framework has to convert the data received from the use case into a proper HTTP response, creating the HTML page if that is the case, or converting the data into a format that can be serialised.
 
-FIGURE 8 - The web framework returns the data in an HTTP response
+{width: 60%}
+![Figure 8](images/figure08.svg)
 
 ### TODO
 
