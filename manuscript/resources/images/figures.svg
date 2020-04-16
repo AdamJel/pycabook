@@ -202,17 +202,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.6556641"
-     inkscape:cx="455.2347"
-     inkscape:cy="401.36566"
+     inkscape:zoom="1.384527"
+     inkscape:cx="468.74545"
+     inkscape:cy="453.93435"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g2085"
      showgrid="false"
      inkscape:window-width="2560"
      inkscape:window-height="1381"
      inkscape:window-x="0"
      inkscape:window-y="30"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -221,7 +223,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -236,12 +238,6 @@
        inkscape:connector-curvature="0"
        style="stroke-width:0.01356484"
        inkscape:label="#path1523" />
-    <path
-       id="web-framework-icon"
-       d="m 74.619828,189.65659 h 12.627638 v -1.57845 H 74.619828 Z m 0,-6.31382 h 12.627638 v -1.57844 H 74.619828 Z m 19.336057,5.52459 q 0,-0.49326 -0.345281,-0.83855 -0.34529,-0.34528 -0.838557,-0.34528 -0.493267,0 -0.838557,0.34528 -0.345281,0.34529 -0.345281,0.83855 0,0.49327 0.345281,0.83855 0.34529,0.3453 0.838557,0.3453 0.493267,0 0.838557,-0.3453 0.345281,-0.34528 0.345281,-0.83855 z M 74.619828,177.02895 h 12.627638 v -1.57844 H 74.619828 Z m 19.336057,5.5246 q 0,-0.49326 -0.345281,-0.83855 -0.34529,-0.34529 -0.838557,-0.34529 -0.493267,0 -0.838557,0.34529 -0.345281,0.34529 -0.345281,0.83855 0,0.49327 0.345281,0.83855 0.34529,0.34529 0.838557,0.34529 0.493267,0 0.838557,-0.34529 0.345281,-0.34528 0.345281,-0.83855 z m 0,-6.31381 q 0,-0.49327 -0.345281,-0.83856 -0.34529,-0.34528 -0.838557,-0.34528 -0.493267,0 -0.838557,0.34528 -0.345281,0.34529 -0.345281,0.83856 0,0.49326 0.345281,0.83855 0.34529,0.34528 0.838557,0.34528 0.493267,0 0.838557,-0.34528 0.345281,-0.34529 0.345281,-0.83855 z m 1.183848,10.25995 v 4.73536 H 73.041381 v -4.73536 z m 0,-6.31382 v 4.73536 H 73.041381 v -4.73536 z m 0,-6.31382 v 4.73537 H 73.041381 v -4.73537 z"
-       inkscape:connector-curvature="0"
-       style="stroke-width:0.01233167"
-       inkscape:label="#path1563" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.6146909;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM)"
        d="M 46.8049,177.1524 H 69.537971"
@@ -260,23 +256,6 @@
          x="26.339117"
          y="169.84819"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;font-family:Lato;-inkscape-font-specification:Lato;stroke-width:0.12761341">User</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
-       x="84.028961"
-       y="163.04555"
-       id="web-framework-text"
-       inkscape:label="#text2192-3"><tspan
-         sodipodi:role="line"
-         id="tspan2190-6"
-         x="84.028961"
-         y="163.04555"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341">Web</tspan><tspan
-         sodipodi:role="line"
-         x="84.028961"
-         y="169.85159"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
-         id="tspan2212">framework</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot2214"
@@ -287,7 +266,7 @@
            height="139.52106"
            x="605.19525"
            y="143.20653" /></flowRegion><flowPara
-         id="flowPara2220"></flowPara></flowRoot>    <path
+         id="flowPara2220" /></flowRoot>    <path
        style="fill:none;stroke:#000000;stroke-width:0.6146909;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-7)"
        d="m 97.0884,177.1524 h 22.73307"
        id="arrow-web-framework-use-case"
@@ -317,22 +296,6 @@
        inkscape:connector-curvature="0"
        style="stroke-width:0.00968917"
        inkscape:label="#path3143" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
-       x="84.027069"
-       y="113.30582"
-       id="storage-wrapper-interface-text"><tspan
-         sodipodi:role="line"
-         x="84.027069"
-         y="113.30582"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
-         id="tspan2212-2">Storage wrapper</tspan><tspan
-         sodipodi:role="line"
-         x="84.027069"
-         y="120.11186"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
-         id="tspan3177">interface</tspan></text>
     <rect
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.06806338;stroke-miterlimit:4;stroke-dasharray:3.20419028, 1.06806343;stroke-dashoffset:0;stroke-opacity:1"
        id="storage-wrapper-box"
@@ -360,51 +323,6 @@
        inkscape:connector-curvature="0"
        style="stroke-width:0.01043449"
        inkscape:label="#path5438" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
-       x="223.0296"
-       y="135.12222"
-       id="text2192-3-9-6"><tspan
-         sodipodi:role="line"
-         x="223.0296"
-         y="135.12222"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
-         id="tspan2212-2-2">Storage</tspan><tspan
-         sodipodi:role="line"
-         x="223.0296"
-         y="141.92827"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
-         id="tspan3177-6">wrapper</tspan></text>
-    <path
-       id="database-icon"
-       d="m 202.83441,180.5225 q 2.29633,0 4.2923,-0.41663 1.99597,-0.41664 3.14898,-1.23053 v 1.64716 q 0,0.66855 -0.99798,1.24021 -0.99799,0.57167 -2.71297,0.90594 -1.71498,0.33428 -3.73033,0.33428 -2.01535,0 -3.73033,-0.33428 -1.71499,-0.33427 -2.71297,-0.90594 -0.99799,-0.57166 -0.99799,-1.24021 v -1.64716 q 1.15301,0.81389 3.14898,1.23053 1.99597,0.41663 4.29231,0.41663 z m 0,7.44129 q 2.29633,0 4.2923,-0.41664 1.99597,-0.41663 3.14898,-1.23052 v 1.64716 q 0,0.66855 -0.99798,1.24021 -0.99799,0.57166 -2.71297,0.90594 -1.71498,0.33427 -3.73033,0.33427 -2.01535,0 -3.73033,-0.33427 -1.71499,-0.33428 -2.71297,-0.90594 -0.99799,-0.57166 -0.99799,-1.24021 v -1.64716 q 1.15301,0.81389 3.14898,1.23052 1.99597,0.41664 4.29231,0.41664 z m 0,-3.72065 q 2.29633,0 4.2923,-0.41663 1.99597,-0.41664 3.14898,-1.23053 v 1.64716 q 0,0.66856 -0.99798,1.24022 -0.99799,0.57166 -2.71297,0.90594 -1.71498,0.33427 -3.73033,0.33427 -2.01535,0 -3.73033,-0.33427 -1.71499,-0.33428 -2.71297,-0.90594 -0.99799,-0.57166 -0.99799,-1.24022 v -1.64716 q 1.15301,0.81389 3.14898,1.23053 1.99597,0.41663 4.29231,0.41663 z m 0,-11.16193 q 2.01535,0 3.73033,0.33428 1.71498,0.33428 2.71297,0.90594 0.99798,0.57166 0.99798,1.24021 v 1.24022 q 0,0.66855 -0.99798,1.24021 -0.99799,0.57166 -2.71297,0.90594 -1.71498,0.33428 -3.73033,0.33428 -2.01535,0 -3.73033,-0.33428 -1.71499,-0.33428 -2.71297,-0.90594 -0.99799,-0.57166 -0.99799,-1.24021 v -1.24022 q 0,-0.66855 0.99799,-1.24021 0.99798,-0.57166 2.71297,-0.90594 1.71498,-0.33428 3.73033,-0.33428 z"
-       inkscape:connector-curvature="0"
-       style="stroke-width:0.00968917"
-       inkscape:label="#path5499" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.6146909;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-7-7-1)"
-       d="m 169.96066,176.98647 h 22.73307"
-       id="arrow-storage-wrapper-database"
-       inkscape:connector-curvature="0"
-       inkscape:label="#path1576-3-9-7" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
-       x="202.65181"
-       y="169.85159"
-       id="text2192-3-9-6-9"><tspan
-         sodipodi:role="line"
-         x="202.65181"
-         y="169.85159"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
-         id="tspan3177-6-0">Database</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.6146909;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-7-7-1-2)"
-       d="M 194.43998,188.00928 H 171.70691"
-       id="arrow-database-storage-wrapper"
-       inkscape:connector-curvature="0"
-       inkscape:label="#path1576-3-9-7-7" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.6146909;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-7-7-1-2-5)"
        d="M 165.48067,188.00928 H 142.7476"
@@ -423,5 +341,183 @@
        id="arrow-web-framework-user"
        inkscape:connector-curvature="0"
        inkscape:label="#path1576-3-9-7-7-2-9-6" />
+    <path
+       id="web-framework-icon"
+       d="m 74.619828,189.65659 h 12.627638 v -1.57845 H 74.619828 Z m 0,-6.31382 h 12.627638 v -1.57844 H 74.619828 Z m 19.336057,5.52459 q 0,-0.49326 -0.345281,-0.83855 -0.34529,-0.34528 -0.838557,-0.34528 -0.493267,0 -0.838557,0.34528 -0.345281,0.34529 -0.345281,0.83855 0,0.49327 0.345281,0.83855 0.34529,0.3453 0.838557,0.3453 0.493267,0 0.838557,-0.3453 0.345281,-0.34528 0.345281,-0.83855 z M 74.619828,177.02895 h 12.627638 v -1.57844 H 74.619828 Z m 19.336057,5.5246 q 0,-0.49326 -0.345281,-0.83855 -0.34529,-0.34529 -0.838557,-0.34529 -0.493267,0 -0.838557,0.34529 -0.345281,0.34529 -0.345281,0.83855 0,0.49327 0.345281,0.83855 0.34529,0.34529 0.838557,0.34529 0.493267,0 0.838557,-0.34529 0.345281,-0.34528 0.345281,-0.83855 z m 0,-6.31381 q 0,-0.49327 -0.345281,-0.83856 -0.34529,-0.34528 -0.838557,-0.34528 -0.493267,0 -0.838557,0.34528 -0.345281,0.34529 -0.345281,0.83856 0,0.49326 0.345281,0.83855 0.34529,0.34528 0.838557,0.34528 0.493267,0 0.838557,-0.34528 0.345281,-0.34529 0.345281,-0.83855 z m 1.183848,10.25995 v 4.73536 H 73.041381 v -4.73536 z m 0,-6.31382 v 4.73536 H 73.041381 v -4.73536 z m 0,-6.31382 v 4.73537 H 73.041381 v -4.73537 z"
+       inkscape:connector-curvature="0"
+       style="display:inline;stroke-width:0.01233167"
+       inkscape:label="#path1563" />
+    <path
+       id="database-icon"
+       d="m 202.83441,180.5225 q 2.29633,0 4.2923,-0.41663 1.99597,-0.41664 3.14898,-1.23053 v 1.64716 q 0,0.66855 -0.99798,1.24021 -0.99799,0.57167 -2.71297,0.90594 -1.71498,0.33428 -3.73033,0.33428 -2.01535,0 -3.73033,-0.33428 -1.71499,-0.33427 -2.71297,-0.90594 -0.99799,-0.57166 -0.99799,-1.24021 v -1.64716 q 1.15301,0.81389 3.14898,1.23053 1.99597,0.41663 4.29231,0.41663 z m 0,7.44129 q 2.29633,0 4.2923,-0.41664 1.99597,-0.41663 3.14898,-1.23052 v 1.64716 q 0,0.66855 -0.99798,1.24021 -0.99799,0.57166 -2.71297,0.90594 -1.71498,0.33427 -3.73033,0.33427 -2.01535,0 -3.73033,-0.33427 -1.71499,-0.33428 -2.71297,-0.90594 -0.99799,-0.57166 -0.99799,-1.24021 v -1.64716 q 1.15301,0.81389 3.14898,1.23052 1.99597,0.41664 4.29231,0.41664 z m 0,-3.72065 q 2.29633,0 4.2923,-0.41663 1.99597,-0.41664 3.14898,-1.23053 v 1.64716 q 0,0.66856 -0.99798,1.24022 -0.99799,0.57166 -2.71297,0.90594 -1.71498,0.33427 -3.73033,0.33427 -2.01535,0 -3.73033,-0.33427 -1.71499,-0.33428 -2.71297,-0.90594 -0.99799,-0.57166 -0.99799,-1.24022 v -1.64716 q 1.15301,0.81389 3.14898,1.23053 1.99597,0.41663 4.29231,0.41663 z m 0,-11.16193 q 2.01535,0 3.73033,0.33428 1.71498,0.33428 2.71297,0.90594 0.99798,0.57166 0.99798,1.24021 v 1.24022 q 0,0.66855 -0.99798,1.24021 -0.99799,0.57166 -2.71297,0.90594 -1.71498,0.33428 -3.73033,0.33428 -2.01535,0 -3.73033,-0.33428 -1.71499,-0.33428 -2.71297,-0.90594 -0.99799,-0.57166 -0.99799,-1.24021 v -1.24022 q 0,-0.66855 0.99799,-1.24021 0.99798,-0.57166 2.71297,-0.90594 1.71498,-0.33428 3.73033,-0.33428 z"
+       inkscape:connector-curvature="0"
+       style="display:inline;stroke-width:0.00968917"
+       inkscape:label="#path5499" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.6146909;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-7-7-1)"
+       d="m 169.96066,176.98647 h 22.73307"
+       id="arrow-storage-wrapper-database"
+       inkscape:connector-curvature="0"
+       inkscape:label="#path1576-3-9-7" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.6146909;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-7-7-1-2)"
+       d="M 194.43998,188.00928 H 171.70691"
+       id="arrow-database-storage-wrapper"
+       inkscape:connector-curvature="0"
+       inkscape:label="#path1576-3-9-7-7" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Web framework"
+     style="display:none">
+    <text
+       transform="translate(0,-87.000001)"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
+       x="84.028961"
+       y="163.04555"
+       id="web-framework-text"
+       inkscape:label="#text2192-3"><tspan
+         sodipodi:role="line"
+         id="tspan2190-6"
+         x="84.028961"
+         y="163.04555"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341">Web</tspan><tspan
+         sodipodi:role="line"
+         x="84.028961"
+         y="169.85159"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         id="tspan2212">framework</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="CLI"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
+       x="84.028961"
+       y="82.851593"
+       id="web-framework-text-6"
+       inkscape:label="#text2192-3"><tspan
+         sodipodi:role="line"
+         x="84.028961"
+         y="82.851593"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         id="tspan2212-5">CLI</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Database"
+     style="display:none">
+    <text
+       transform="translate(0,-87.000001)"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
+       x="202.65181"
+       y="169.85159"
+       id="text2192-3-9-6-9"><tspan
+         sodipodi:role="line"
+         x="202.65181"
+         y="169.85159"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         id="tspan3177-6-0">Database</tspan></text>
+    <text
+       transform="translate(0,-87.000001)"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
+       x="84.027069"
+       y="113.30582"
+       id="storage-wrapper-interface-text"><tspan
+         sodipodi:role="line"
+         x="84.027069"
+         y="113.30582"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         id="tspan2212-2">Storage wrapper</tspan><tspan
+         sodipodi:role="line"
+         x="84.027069"
+         y="120.11186"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         id="tspan3177">interface</tspan></text>
+    <text
+       transform="translate(0,-87.000001)"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
+       x="223.0296"
+       y="135.12222"
+       id="text2192-3-9-6"><tspan
+         sodipodi:role="line"
+         x="223.0296"
+         y="135.12222"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         id="tspan2212-2-2">Storage</tspan><tspan
+         sodipodi:role="line"
+         x="223.0296"
+         y="141.92827"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         id="tspan3177-6">wrapper</tspan></text>
+  </g>
+  <g
+     style="display:inline"
+     inkscape:label="Database copy"
+     id="g2085"
+     inkscape:groupmode="layer">
+    <text
+       id="text2071"
+       y="169.85159"
+       x="202.65181"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
+       xml:space="preserve"
+       transform="translate(0,-87.000001)"><tspan
+         id="tspan2069"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         y="169.85159"
+         x="202.65181"
+         sodipodi:role="line">Text files</tspan></text>
+    <text
+       id="text2077"
+       y="19.426643"
+       x="84.027069"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         y="19.426643"
+         x="84.027069"
+         sodipodi:role="line"
+         id="tspan2087">Text files</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         y="26.232693"
+         x="84.027069"
+         sodipodi:role="line"
+         id="tspan2091">storage wrapper</tspan><tspan
+         id="tspan2075"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         y="33.038742"
+         x="84.027069"
+         sodipodi:role="line">interface</tspan></text>
+    <text
+       id="text2083"
+       y="41.243053"
+       x="223.0296"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
+       xml:space="preserve"><tspan
+         id="tspan2079"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         y="41.243053"
+         x="223.0296"
+         sodipodi:role="line">Text files</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         y="48.049103"
+         x="223.0296"
+         sodipodi:role="line"
+         id="tspan2093">storage</tspan><tspan
+         id="tspan2081"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         y="54.855148"
+         x="223.0296"
+         sodipodi:role="line">wrapper</tspan></text>
   </g>
 </svg>
