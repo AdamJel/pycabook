@@ -161,9 +161,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.6556641"
-     inkscape:cx="401.42489"
-     inkscape:cy="153.06987"
+     inkscape:zoom="1.384527"
+     inkscape:cx="338.76145"
+     inkscape:cy="142.13203"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -180,7 +180,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -353,11 +353,11 @@
        id="web-framework-icon-3"
        d="m 128.68483,204.21253 h 12.62764 v -1.57845 h -12.62764 z m 0,-6.31382 h 12.62764 v -1.57844 h -12.62764 z m 19.33606,5.52459 q 0,-0.49326 -0.34528,-0.83855 -0.34529,-0.34528 -0.83856,-0.34528 -0.49327,0 -0.83856,0.34528 -0.34528,0.34529 -0.34528,0.83855 0,0.49327 0.34528,0.83855 0.34529,0.3453 0.83856,0.3453 0.49327,0 0.83856,-0.3453 0.34528,-0.34528 0.34528,-0.83855 z m -19.33606,-11.83841 h 12.62764 v -1.57844 h -12.62764 z m 19.33606,5.5246 q 0,-0.49326 -0.34528,-0.83855 -0.34529,-0.34529 -0.83856,-0.34529 -0.49327,0 -0.83856,0.34529 -0.34528,0.34529 -0.34528,0.83855 0,0.49327 0.34528,0.83855 0.34529,0.34529 0.83856,0.34529 0.49327,0 0.83856,-0.34529 0.34528,-0.34528 0.34528,-0.83855 z m 0,-6.31381 q 0,-0.49327 -0.34528,-0.83856 -0.34529,-0.34528 -0.83856,-0.34528 -0.49327,0 -0.83856,0.34528 -0.34528,0.34529 -0.34528,0.83856 0,0.49326 0.34528,0.83855 0.34529,0.34528 0.83856,0.34528 0.49327,0 0.83856,-0.34528 0.34528,-0.34529 0.34528,-0.83855 z m 1.18385,10.25995 v 4.73536 h -22.09835 v -4.73536 z m 0,-6.31382 v 4.73536 h -22.09835 v -4.73536 z m 0,-6.31382 v 4.73537 h -22.09835 v -4.73537 z"
        inkscape:connector-curvature="0"
-       style="display:inline;stroke-width:0.01233167"
+       style="display:inline;stroke-width:0.01233167;fill:#ff4f00;fill-opacity:1"
        inkscape:label="#path1563" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#ff4f00;fill-opacity:1;stroke:none;stroke-width:0.12761341;"
        x="138.09396"
        y="184.40753"
        id="web-framework-text-6"
@@ -365,7 +365,7 @@
          sodipodi:role="line"
          x="138.09396"
          y="184.40753"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341;fill:#ff4f00;fill-opacity:1;"
          id="tspan2212-5">CLI</tspan></text>
   </g>
 </svg>

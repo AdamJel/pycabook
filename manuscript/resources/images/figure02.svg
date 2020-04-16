@@ -15,7 +15,7 @@
    version="1.1"
    id="svg7982"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="figure2.svg">
+   sodipodi:docname="figure02.svg">
   <defs
      id="defs7976">
     <marker
@@ -56,9 +56,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.6556641"
-     inkscape:cx="65.702216"
-     inkscape:cy="35.668636"
+     inkscape:zoom="2.7690539"
+     inkscape:cx="338.53652"
+     inkscape:cy="-27.598457"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -75,7 +75,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -141,11 +141,11 @@
        id="use-case-icon"
        d="m 167.50753,154.26382 v 1.3356 h -1.16866 q -0.16695,0 -0.16695,-0.16694 v -0.16695 h -0.50086 q -0.16695,0 -0.16695,-0.16695 v -0.33392 q 0,-0.16695 0.16695,-0.16695 h 0.50086 v -0.16694 q 0,-0.16695 0.16695,-0.16695 z m 0,-2.67123 v 1.3356 h -1.16866 q -0.16695,0 -0.16695,-0.16695 v -0.16695 h -0.50086 q -0.16695,0 -0.16695,-0.16694 v -0.33391 q 0,-0.16696 0.16695,-0.16696 h 0.50086 v -0.16695 q 0,-0.16694 0.16695,-0.16694 z m 0,-2.67124 v 1.33561 h -1.16866 q -0.16695,0 -0.16695,-0.16694 v -0.16695 h -0.50086 q -0.16695,0 -0.16695,-0.16696 v -0.33391 q 0,-0.16695 0.16695,-0.16695 h 0.50086 v -0.16695 q 0,-0.16695 0.16695,-0.16695 z m 0,-2.67123 v 1.33561 h -1.16866 q -0.16695,0 -0.16695,-0.16695 v -0.16695 h -0.50086 q -0.16695,0 -0.16695,-0.16695 v -0.33391 q 0,-0.16695 0.16695,-0.16695 h 0.50086 v -0.16695 q 0,-0.16695 0.16695,-0.16695 z m 0,-2.67123 v 1.33561 h -1.16866 q -0.16695,0 -0.16695,-0.16695 v -0.16695 h -0.50086 q -0.16695,0 -0.16695,-0.16696 v -0.3339 q 0,-0.16695 0.16695,-0.16695 h 0.50086 v -0.16695 q 0,-0.16695 0.16695,-0.16695 z m 11.35273,-1.66952 v 15.35958 q 0,0.41738 -0.29216,0.70954 -0.29217,0.29217 -0.70955,0.29217 h -8.6815 q -0.41738,0 -0.70954,-0.29217 -0.29217,-0.29216 -0.29217,-0.70954 v -15.35958 q 0,-0.41738 0.29217,-0.70955 0.29216,-0.29217 0.70954,-0.29217 h 8.6815 q 0.41738,0 0.70955,0.29217 0.29216,0.29217 0.29216,0.70955 z m 2.67123,12.85529 v 0.33392 q 0,0.16695 -0.16695,0.16695 h -0.50085 v 0.16695 q 0,0.16694 -0.16696,0.16694 h -1.16866 v -1.3356 h 1.16866 q 0.16696,0 0.16696,0.16695 v 0.16694 h 0.50085 q 0.16695,0 0.16695,0.16695 z m 0,-2.67122 v 0.33391 q 0,0.16694 -0.16695,0.16694 h -0.50085 v 0.16695 q 0,0.16695 -0.16696,0.16695 h -1.16866 v -1.3356 h 1.16866 q 0.16696,0 0.16696,0.16694 v 0.16695 h 0.50085 q 0.16695,0 0.16695,0.16696 z m 0,-2.67124 v 0.33391 q 0,0.16696 -0.16695,0.16696 h -0.50085 v 0.16695 q 0,0.16694 -0.16696,0.16694 h -1.16866 v -1.33561 h 1.16866 q 0.16696,0 0.16696,0.16695 v 0.16695 h 0.50085 q 0.16695,0 0.16695,0.16695 z m 0,-2.67123 v 0.33391 q 0,0.16695 -0.16695,0.16695 h -0.50085 v 0.16695 q 0,0.16695 -0.16696,0.16695 h -1.16866 v -1.33561 h 1.16866 q 0.16696,0 0.16696,0.16695 v 0.16695 h 0.50085 q 0.16695,0 0.16695,0.16695 z m 0,-2.67123 v 0.3339 q 0,0.16696 -0.16695,0.16696 h -0.50085 v 0.16695 q 0,0.16695 -0.16696,0.16695 h -1.16866 v -1.33561 h 1.16866 q 0.16696,0 0.16696,0.16695 v 0.16695 h 0.50085 q 0.16695,0 0.16695,0.16695 z"
        inkscape:connector-curvature="0"
-       style="stroke-width:0.01043449"
+       style="stroke-width:0.01043449;fill:#ff4f00;fill-opacity:1"
        inkscape:label="#path3076" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ff4f00;fill-opacity:1;stroke:none;stroke-width:0.12761341;"
        x="173.36583"
        y="136.88379"
        id="use-case-text"
@@ -153,7 +153,7 @@
          sodipodi:role="line"
          x="173.36583"
          y="136.88379"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341;fill:#ff4f00;fill-opacity:1;"
          id="tspan3110">Use case</tspan></text>
   </g>
 </svg>

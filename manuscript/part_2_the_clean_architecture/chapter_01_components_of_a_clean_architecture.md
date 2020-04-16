@@ -99,7 +99,7 @@ The main immediate advantage of a layered architecture, however, is testability.
 {width: 80%}
 ![Figure 11](images/figure11.svg)
 
-{width: 60%}
+{width: 80%}
 ![Figure 12](images/figure12.svg)
 
 We know that the Web framework receives an HTTP request (1) with a specific target and a specific query string, and that it has to call (2) a method on the use case passing specific parameters. When the use case returns data (3), the Web framework has to convert that into an HTTP response (4). Since this is a test we can have a fake use case, that is an object that just mimics what the use case does without really implementing the business logic.

@@ -71,9 +71,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="103.19337"
-     inkscape:cy="-14.261845"
+     inkscape:zoom="1.6556641"
+     inkscape:cx="284.32704"
+     inkscape:cy="45.528026"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -90,7 +90,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -174,23 +174,23 @@
        id="storage-wrapper-interface-icon"
        d="m 485.28323,-130.51526 q 0.13565,0.13565 0.27129,0.34881 h -4.57329 v -4.57329 q 0.21317,0.13565 0.34881,0.2713 z m -4.61205,1.58903 h 5.27091 v 10.23176 q 0,0.38757 -0.2713,0.65887 -0.27129,0.27129 -0.65886,0.27129 h -13.02225 q -0.38757,0 -0.65886,-0.27129 -0.2713,-0.2713 -0.2713,-0.65887 v -15.50267 q 0,-0.38757 0.2713,-0.65887 0.27129,-0.2713 0.65886,-0.2713 h 7.75134 v 5.27092 q 0,0.38756 0.2713,0.65886 0.27128,0.2713 0.65886,0.2713 z m 1.55027,7.13123 v -0.62011 q 0,-0.13565 -0.0872,-0.22285 -0.0872,-0.0872 -0.22286,-0.0872 h -6.82118 q -0.13565,0 -0.22284,0.0872 -0.0872,0.0872 -0.0872,0.22285 v 0.62011 q 0,0.13565 0.0872,0.22285 0.0872,0.0872 0.22284,0.0872 h 6.82118 q 0.13565,0 0.22286,-0.0872 0.0872,-0.0872 0.0872,-0.22285 z m 0,-2.48043 v -0.62011 q 0,-0.13565 -0.0872,-0.22285 -0.0872,-0.0872 -0.22286,-0.0872 h -6.82118 q -0.13565,0 -0.22284,0.0872 -0.0872,0.0872 -0.0872,0.22285 v 0.62011 q 0,0.13565 0.0872,0.22285 0.0872,0.0872 0.22284,0.0872 h 6.82118 q 0.13565,0 0.22286,-0.0872 0.0872,-0.0872 0.0872,-0.22285 z m 0,-2.48043 v -0.62011 q 0,-0.13564 -0.0872,-0.22285 -0.0872,-0.0872 -0.22286,-0.0872 h -6.82118 q -0.13565,0 -0.22284,0.0872 -0.0872,0.0872 -0.0872,0.22285 v 0.62011 q 0,0.13565 0.0872,0.22285 0.0872,0.0872 0.22284,0.0872 h 6.82118 q 0.13565,0 0.22286,-0.0872 0.0872,-0.0872 0.0872,-0.22285 z"
        inkscape:connector-curvature="0"
-       style="stroke-width:0.00968917"
+       style="stroke-width:0.00968917;fill:#ff4f00;fill-opacity:1"
        inkscape:label="#path3143" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ff4f00;fill-opacity:1;stroke:none;stroke-width:0.12761341;"
        x="478.43732"
        y="-146.35669"
        id="storage-wrapper-interface-text"><tspan
          sodipodi:role="line"
          x="478.43732"
          y="-146.35669"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341;fill:#ff4f00;fill-opacity:1;"
          id="tspan2212-2">Storage wrapper</tspan><tspan
          sodipodi:role="line"
          x="478.43732"
          y="-139.55064"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341;fill:#ff4f00;fill-opacity:1;"
          id="tspan3177">interface</tspan></text>
     <rect
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.06806338;stroke-miterlimit:4;stroke-dasharray:3.20419031, 1.06806344;stroke-dashoffset:0;stroke-opacity:1"

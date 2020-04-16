@@ -86,9 +86,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.97900841"
-     inkscape:cx="151.1499"
-     inkscape:cy="-167.19363"
+     inkscape:zoom="1.1577922"
+     inkscape:cx="279.17343"
+     inkscape:cy="-64.460081"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -105,7 +105,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -186,7 +186,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
          id="tspan3110">Use case</tspan></text>
     <rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.06806338;stroke-miterlimit:4;stroke-dasharray:3.20419031, 1.06806344;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;stroke:#ff4f00;stroke-width:1.06806338;stroke-miterlimit:4;stroke-dasharray:3.20419031, 1.06806343999999998;stroke-dashoffset:0;stroke-opacity:1"
        id="storage-wrapper-box"
        width="54.664207"
        height="50.17757"
@@ -197,23 +197,23 @@
        id="storage-wrapper-icon"
        d="m 220.56418,62.840658 6.67807,-3.64164 v -6.63634 l -6.67807,2.431241 z m -0.66781,-9.02584 7.28328,-2.65036 -7.28328,-2.65036 -7.28328,2.65036 z m 8.6815,-2.62949 v 8.01369 q 0,0.36521 -0.18782,0.678249 -0.18782,0.313031 -0.51129,0.490421 l -7.34589,4.00684 q -0.29216,0.16695 -0.6365,0.16695 -0.34434,0 -0.6365,-0.16695 l -7.34589,-4.00684 q -0.32347,-0.17739 -0.51129,-0.490421 -0.18782,-0.313039 -0.18782,-0.678249 v -8.01369 q 0,-0.41738 0.23999,-0.76172 0.24,-0.34434 0.63651,-0.49042 l 7.34588,-2.67123 q 0.22956,-0.0835 0.45912,-0.0835 0.22956,0 0.45912,0.0835 l 7.34588,2.67123 q 0.39651,0.14608 0.63651,0.49042 0.23999,0.34434 0.23999,0.76172 z"
        inkscape:connector-curvature="0"
-       style="stroke-width:0.01043449"
+       style="stroke-width:0.01043449;fill:#ff4f00;fill-opacity:1"
        inkscape:label="#path5438" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ff4f00;fill-opacity:1;stroke:none;stroke-width:0.12761341;"
        x="219.8633"
        y="37.364761"
        id="text2192-3-9-6"><tspan
          sodipodi:role="line"
          x="219.8633"
          y="37.364761"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341;fill:#ff4f00;fill-opacity:1;"
          id="tspan2212-2-2">Storage</tspan><tspan
          sodipodi:role="line"
          x="219.8633"
          y="44.170811"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341;fill:#ff4f00;fill-opacity:1;"
          id="tspan3177-6">wrapper</tspan></text>
     <path
        id="database-icon"

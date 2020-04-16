@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8627"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="figure3.svg">
+   sodipodi:docname="figure03.svg">
   <defs
      id="defs8621">
     <marker
@@ -56,9 +56,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.6556641"
-     inkscape:cx="265.82251"
-     inkscape:cy="-7.2144882"
+     inkscape:zoom="1.384527"
+     inkscape:cx="352.67982"
+     inkscape:cy="-57.942122"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -75,7 +75,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -159,11 +159,11 @@
        id="database-icon"
        d="m 192.42003,136.21195 q 2.29633,0 4.2923,-0.41663 1.99597,-0.41664 3.14898,-1.23053 v 1.64716 q 0,0.66855 -0.99798,1.24021 -0.99799,0.57167 -2.71297,0.90594 -1.71498,0.33428 -3.73033,0.33428 -2.01535,0 -3.73033,-0.33428 -1.71499,-0.33427 -2.71297,-0.90594 -0.99799,-0.57166 -0.99799,-1.24021 v -1.64716 q 1.15301,0.81389 3.14898,1.23053 1.99597,0.41663 4.29231,0.41663 z m 0,7.44129 q 2.29633,0 4.2923,-0.41664 1.99597,-0.41663 3.14898,-1.23052 v 1.64716 q 0,0.66855 -0.99798,1.24021 -0.99799,0.57166 -2.71297,0.90594 -1.71498,0.33427 -3.73033,0.33427 -2.01535,0 -3.73033,-0.33427 -1.71499,-0.33428 -2.71297,-0.90594 -0.99799,-0.57166 -0.99799,-1.24021 v -1.64716 q 1.15301,0.81389 3.14898,1.23052 1.99597,0.41664 4.29231,0.41664 z m 0,-3.72065 q 2.29633,0 4.2923,-0.41663 1.99597,-0.41664 3.14898,-1.23053 v 1.64716 q 0,0.66856 -0.99798,1.24022 -0.99799,0.57166 -2.71297,0.90594 -1.71498,0.33427 -3.73033,0.33427 -2.01535,0 -3.73033,-0.33427 -1.71499,-0.33428 -2.71297,-0.90594 -0.99799,-0.57166 -0.99799,-1.24022 v -1.64716 q 1.15301,0.81389 3.14898,1.23053 1.99597,0.41663 4.29231,0.41663 z m 0,-11.16193 q 2.01535,0 3.73033,0.33428 1.71498,0.33428 2.71297,0.90594 0.99798,0.57166 0.99798,1.24021 v 1.24022 q 0,0.66855 -0.99798,1.24021 -0.99799,0.57166 -2.71297,0.90594 -1.71498,0.33428 -3.73033,0.33428 -2.01535,0 -3.73033,-0.33428 -1.71499,-0.33428 -2.71297,-0.90594 -0.99799,-0.57166 -0.99799,-1.24021 v -1.24022 q 0,-0.66855 0.99799,-1.24021 0.99798,-0.57166 2.71297,-0.90594 1.71498,-0.33428 3.73033,-0.33428 z"
        inkscape:connector-curvature="0"
-       style="stroke-width:0.00968917"
+       style="stroke-width:0.00968917;fill:#ff4f00;fill-opacity:1"
        inkscape:label="#path5499" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ff4f00;fill-opacity:1;stroke:none;stroke-width:0.12761341;"
        x="192.23743"
        y="125.54105"
        id="database-text"
@@ -171,7 +171,7 @@
          sodipodi:role="line"
          x="192.23743"
          y="125.54105"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341;fill:#ff4f00;fill-opacity:1;"
          id="tspan3177-6-0">Database</tspan></text>
   </g>
 </svg>

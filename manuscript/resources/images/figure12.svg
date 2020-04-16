@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="109.40495mm"
+   width="142.69009mm"
    height="46.323055mm"
-   viewBox="0 0 109.40496 46.323055"
+   viewBox="0 0 142.6901 46.323055"
    version="1.1"
    id="svg5077"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
@@ -86,9 +86,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="152.03635"
-     inkscape:cy="-6.4580342"
+     inkscape:zoom="1.6724733"
+     inkscape:cx="155.55188"
+     inkscape:cy="17.147817"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -96,7 +96,9 @@
      inkscape:window-height="1381"
      inkscape:window-x="0"
      inkscape:window-y="30"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
   <metadata
      id="metadata5074">
     <rdf:RDF>
@@ -105,7 +107,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -113,7 +115,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-64.954004,-134.04991)">
+     transform="translate(-31.668867,-134.04991)">
     <path
        style="fill:none;stroke:#000000;stroke-width:0.6146909;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-8)"
        d="M 66.26971,158.46108 H 89.00278"
@@ -239,7 +241,7 @@
          id="tspan5856"
          x="74.95443"
          y="153.97911"
-         style="stroke-width:0.26458332"></tspan></text>
+         style="stroke-width:0.26458332" /></text>
     <g
        id="g5867"
        transform="translate(3.6234858,5.0073755)">
@@ -324,5 +326,25 @@
            id="tspan5860-2-5"
            sodipodi:role="line">3</tspan></text>
     </g>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.46762171;stroke-miterlimit:4;stroke-dasharray:1.40286519, 0.46762173;stroke-dashoffset:0;stroke-opacity:1"
+       id="storage-wrapper-box-9"
+       width="31.120031"
+       height="16.895378"
+       x="31.902678"
+       y="155.41454"
+       inkscape:label="#rect3179" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.80604839px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12761341"
+       x="47.561829"
+       y="165.26892"
+       id="web-framework-text-9-28-4"
+       inkscape:label="#text2192-3"><tspan
+         sodipodi:role="line"
+         x="47.561829"
+         y="165.26892"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;line-height:1;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;stroke-width:0.12761341"
+         id="tspan2212-0-9-5">Test</tspan></text>
   </g>
 </svg>
