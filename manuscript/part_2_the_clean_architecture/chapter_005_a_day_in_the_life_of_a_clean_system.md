@@ -10,13 +10,13 @@ The purpose of this introductory chapter is to familiarise with main concepts li
 
 ## The data flow
 
-In the rest of the book, we will design together part of a simple web application that provides a house renting system. So, let's consider that our "Rent-o-Matic" application[^dott] is running at https://www.rentomatic.com, and that a user wants to see the available houses. They open the browser and type the address, then clicking on menus and buttons they reach the page with the list of all the houses that our company rents.
+In the rest of the book, we will design together part of a simple web application that provides a house renting system. So, let's consider that our "Rent-o-Matic" application[^dott] is running at `https://www.rentomatic.com`, and that a user wants to see the available houses. They open the browser and type the address, then clicking on menus and buttons they reach the page with the list of all the houses that our company rents.
 
 [^dott]: Fans of "Day of the Tentacle" may get the reference.
 
-Let's assume that this address is https://www.rentomatic.com/houses?status=available. When the user's browser accesses that URL, an HTTP request reaches our system, where there is a component that is waiting for HTTP connections. Let's call this component "web framework"[^webframework].
+Let's assume that this address is `https://www.rentomatic.com/houses?status=available`. When the user's browser accesses that URL, an HTTP request reaches our system, where there is a component that is waiting for HTTP connections. Let's call this component "web framework"[^webframework].
 
-[^webframework]: there are many more layers that the HTTP request has to go through before reaching the actual web framework, for example the web server, but since the purpose of those layers is mostly to increase performances, I am not going to consider them in this book.
+[^webframework]: There are many more layers that the HTTP request has to go through before reaching the actual web framework, for example the web server, but since the purpose of those layers is mostly to increase performances, I am not going to consider them in this book.
 
 The purpose of the web framework is to understand the HTTP request and to retrieve the data that we need to provide a response. In this simple case there are two important parts of the request, namely the endpoint itself (`/houses`), and a single query string parameter, `status=available`. Endpoints are like commands for our system, so when a user accesses one of them, they signal to the system that a specific service has been requested, which in this case is the list of all the houses that are available for rent.
 
@@ -25,18 +25,16 @@ The purpose of the web framework is to understand the HTTP request and to retrie
 
 The domain in which the web framework operates is that of the HTTP protocol, so when the web framework has decoded the request it should pass the relevent information to another component that will process it. This other component is called "use case", and it is the crucial and most important component of the whole clean system as it implement the _business logic_.
 
-This is an important concept in system design, as you are creating a system because you have some knowledge that you think might be useful to the world, or at the very least marketable. This knowledge is, at the end of the day, a way to process data, a way to extract or present data that maybe others don't have. A search engine can find all the web pages that are related to the terms in a query, a social network shows you the posts of people you follow and sorts them according to a specific algorithm, a travel company finds the best options for your journey between two locations, and so on. All these are good examples of business logic.
-
-The use case implements a very specific part of the business logic, and in this case we have a use case to search for houses with a given value of the `status` parameter. This means that the use case has to extract all the houses that are managed by our company and filter them to show only the ones that are available.
-
-Why can't the web framework do it? Well, the main purpose of a good system architecture is to separate concerns, that is to keep different responsibilities and domains separated. The web framework is there to process the HTTP protocol, and is maintained by programmers that are concerned with that specific part of the system, and adding the business logic mixes two very different fields.
-
-AS we will see, separating layers allows us to maintain the system with less effort, making single parts of it more testable and easily replaceable.
-
 {width: 60%}
 ![Figure 2](images/figure02.svg)
 
-In this case, the business logic is not very complicated. The use case needs to get all the houses from a source of data and then just filter them.
+This is an important concept in system design, as you are creating a system because you have some knowledge that you think might be useful to the world, or at the very least marketable. This knowledge is, at the end of the day, a way to process data, a way to extract or present data that maybe others don't have. A search engine can find all the web pages that are related to the terms in a query, a social network shows you the posts of people you follow and sorts them according to a specific algorithm, a travel company finds the best options for your journey between two locations, and so on. All these are good examples of business logic.
+
+The use case implements a very specific part of the business logic, and here we have a use case to search for houses with a given value of the `status` parameter. This means that the use case has to extract all the houses that are managed by our company and filter them to show only the ones that are available.
+
+Why can't the web framework do it? Well, the main purpose of a good system architecture is to separate concerns, that is to keep different responsibilities and domains separated. The web framework is there to process the HTTP protocol, and is maintained by programmers that are concerned with that specific part of the system, and adding the business logic mixes two very different fields.
+
+As we will see, separating layers allows us to maintain the system with less effort, making single parts of it more testable and easily replaceable.
 
 In the example that we are discussing here, the use case needs to fetch all the houses that are in an available state, extracting them from a source of data. The business logic consists in extracting available houses, which is very straightforward, as it will probably be a simple filtering on the value of an attribute, but this might not be the case. An example of a more advanced business logic might be an ordering based on a recommendation system, and it might involve more components than just the use case and the data source.
 
@@ -86,7 +84,7 @@ The web framework converts the data received from the use case into an HTTP resp
 
 As you can see, the stages of this process are clearly separated, and there is a great deal of data transformation between them. Using common data formats is one of the way we achieve independence, or loose coupling, between components of a computer system.
 
-To TODO better understand what loose coupling means for a programmer, let's consider the last picture. In the previous paragraphs I gave an example of a system that uses a web framework for the user interface and a relational database for the data source, but what would change if the front-end part was a command-line interface?
+To better understand what loose coupling means for a programmer, let's consider the last picture. In the previous paragraphs I gave an example of a system that uses a web framework for the user interface and a relational database for the data source, but what would change if the front-end part was a command-line interface?
 
 {width: 80%}
 ![Figure 9](images/figure09.svg)
@@ -106,7 +104,6 @@ The main immediate advantage of a layered architecture, however, is testability.
 {width: 80%}
 ![Figure 12](images/figure12.svg)
 
-We know that the Web framework receives an HTTP request (1) with a specific target and a specific query string, and that it has to call (2) a method on the use case passing specific parameters. When the use case returns data (3), the Web framework has to convert that into an HTTP response (4). Since this is a test we can have a fake use case, that is an object that just mimics what the use case does without really implementing the business logic.
+We know that the Web framework receives an HTTP request (1) with a specific target and a specific query string, and that it has to call (2) a method on the use case passing specific parameters. When the use case returns data (3), the Web framework has to convert that into an HTTP response (4). Since this is a test we can have a fake use case, that is an object that just mimics what the use case does without really implementing the business logic. We will then test that the Web framework calls the method (2) with the correct parameters, and that the HTTP response (4) contains the correct data in the proper format, and all this will happen without involving any other part of the system.
 
-We will then test that the Web framework calls the method (2) with the correct parameters, and that the HTTP response (4) contains the correct data in the proper format, and all this will happen without involving any other part of the system.
-
+So, now that we had a 10,000 feet overview of the system, let's go deeper into its components and the concepts behind them.
